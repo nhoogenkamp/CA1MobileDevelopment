@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    // navigation bar while I like this one from the bottom I want it to be placed at the top.
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_main" />
+
+    // making sure you can scroll on page
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            // header text
+            <TextView
+                android:id="@+id/headerTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="NAPOLITAN PIZZA NIELS"
+                android:textSize="28sp"
+                android:fontFamily="serif-monospace"
+                android:textStyle="bold" />
+
+
+            // products layout
+            <LinearLayout
+                android:id="@+id/products_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- Product items will be added here programmatically -->
+
+            </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            // button about us
+            <Button
+                android:id="@+id/button_about_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+            // button for FAQ
+            <Button
+                android:id="@+id/button_faq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ"
+                android:backgroundTint="@android:color/holo_green_light" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

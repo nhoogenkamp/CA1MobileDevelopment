@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    // name input field
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    // address input field
+    <EditText
+        android:id="@+id/address_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address" />
+
+    // email input field
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:autofillHints="" />
+
+    // quantity spinner to selcet amount of pizza
+    <Spinner
+        android:id="@+id/spinner_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:entries="@array/quantity_array" />
+
+    // discount code input field
+    <EditText
+        android:id="@+id/discount_code_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Do you have a discount Code?" />
+
+</LinearLayout>

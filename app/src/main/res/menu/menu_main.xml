@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    //home button in navigation bar
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    // offers button in navigation
+    <item
+        android:id="@+id/action_offers"
+        android:title="Offers"
+        app:showAsAction="always" />
+
+    // feedback button in navigation
+    <item
+        android:id="@+id/action_feedback"
+        android:title="Feedback"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    // navigation bar while I like this one from the bottom I want it to be placed at the top.
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="start"
+        app:menu="@menu/menu_main" />
+
+    // feedback form
+    <TextView
+        android:id="@+id/feedback_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Customer Feedback" />
+
+    //EditText for user's name
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"
+        android:inputType="textPersonName"
+        android:autofillHints="" />
+
+    //EditText for feedback comments
+    <EditText
+        android:id="@+id/editTextComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Comments"
+        android:inputType="textMultiLine"
+        android:autofillHints="" />
+
+    //RatingBar for rating
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="1" />
+
+    //Button to submit feedback
+    <Button
+        android:id="@+id/buttonSubmitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Submit Feedback"
+        android:backgroundTint="@android:color/holo_green_light" />
+
+</LinearLayout>
